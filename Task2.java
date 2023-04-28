@@ -18,10 +18,14 @@ public class Task2 {
       list.add(2);
       list.add(6);
       System.out.println(list);
-      Integer ResultMax = Collections.max(list);
-      Integer ResultMin = Collections.min(list);
-      System.out.println("Максимальное арифметическое: " + ResultMax);
-      System.out.println("Минимальное арифметическое: " + ResultMin);
-      System.out.println("Среднее арифметическое: " + (ResultMax + ResultMin) / 2);
+      Integer resultMax = Collections.max(list);
+      Integer resultMin = Collections.min(list);
+      int sum = 0;
+      for (int i = 0; i < list.size(); i++) {
+         sum += list.get(i);
+      }
+      System.out.println("Максимальное арифметическое: " + resultMax);
+      System.out.println("Минимальное арифметическое: " + resultMin);
+      System.out.println("Среднее арифметическое: " + (sum) / 6);
    }
 }
