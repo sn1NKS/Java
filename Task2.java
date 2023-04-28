@@ -24,8 +24,8 @@ public class Task2 {
       for (int i = 0; i < list.size(); i++) {
          sum += list.get(i);
       }
-      System.out.println("Максимальное арифметическое: " + resultMax);
-      System.out.println("Минимальное арифметическое: " + resultMin);
+      System.out.println("Максимальное: " + resultMax);
+      System.out.println("Минимальное: " + resultMin);
       System.out.println("Среднее арифметическое: " + (sum) / 6);
    }
 }
